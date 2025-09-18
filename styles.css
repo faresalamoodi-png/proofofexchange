@@ -12,7 +12,7 @@ body {
 @media print {
     @page {
         size: 15cm 20cm; /* تحديد حجم الصفحة (العرض والارتفاع) */
-        margin: 5mm; /* تقليل الهوامش */
+        margin: 2mm; /* تقليل الهوامش */
     }
 
     body {
@@ -24,7 +24,7 @@ body {
         box-shadow: none; /* إزالة الظلال عند الطباعة */
         border: none; /* إزالة الحدود عند الطباعة */
         max-width: 100%; /* ضمان أن الحاوية تتناسب مع حجم الصفحة */
-        padding: 0; /* إزالة الحواشي من الحاوية */
+        padding: 30px; /* تحديد الهوامش الداخلية */
         margin: 0; /* إزالة الهوامش من الحاوية */
     }
 
@@ -44,8 +44,8 @@ body {
 
     .logo {
         width: 60px; /* تقليل حجم الشعار */
-        height: 60px; /* تقليل حجم الشعار */
-        font-size: 1em; /* تقليل حجم الخط */
+        height: 60px; /* حجم الشعار */
+        font-size: 1em; /* حجم الخط */
     }
 
     button {
@@ -123,6 +123,8 @@ body {
 
 .form-group.small {
     width: 32%; /* تعديل حجم الخانات الصغيرة */
+    display: flex; /* إضافة flexbox لتنسيق العناصر داخل المجموعة الصغيرة */
+    align-items: center; /* توسيط العناصر عمودياً */
 }
 
 .form-group.wide {
@@ -173,7 +175,7 @@ button:hover {
 }
 
 .signature {
-    width: 45%;
+    width: 30%; /* تعديل عرض خانة التوقيع */
 }
 
 .footer {
